@@ -4,13 +4,28 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	char c;
 	
-	printf("input an alphabet :");
-	scanf("%c", &c);
+	int a, b;
 	
-	printf("input alphapet is %c (%d), and the next on is %c (%d)\n", c, c, c+1, c+1);
+	printf("분자를 입력하세요 : ");
+	scanf("%d", &a);
 	
+	printf("분모를 입력하세요 : ");
+	scanf("%d", &b);
+	
+	printf("나누기의 결과는 %f 입니다.\n", (float)a/b);
+	/*
+	int a;
+	folat b;
+	
+	printf("분자를 입력하세요 : ");
+	scanf("%d", &a);
+	
+	printf("분모를 입력하세요 : ");
+	scanf("%f", &b);
+	
+	printf("나누기의 결과는 %f 입니다.\n", a/b);
+	
+	*/
 	return 0;
-
 }
